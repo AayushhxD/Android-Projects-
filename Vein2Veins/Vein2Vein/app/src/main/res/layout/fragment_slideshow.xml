@@ -1,0 +1,342 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.ui.slideshow.SlideshowFragment"
+    android:background="@drawable/login_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_slideshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill in the following details correctly to help you better."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.100" />
+
+            <TextView
+                android:id="@+id/name_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Please select the required type"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_bg"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Blood"
+                    android:paddingRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Plasma"
+                    android:paddingRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Platelets"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/name_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Patient's First Name"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/surname_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Patient's Last Name"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/dob_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Date of Birth"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/gender_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Gender"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/blood_group_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Blood Group"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/units_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Blood Units Required"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/location_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Location for Donation"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/required_date_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Required Date"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/critical_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Is the patient critical?"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawablePadding="10dp"
+                android:textSize="19dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"/>
+
+            <EditText
+                android:id="@+id/mobile_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Contact No."
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_contact_phone_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/hospital_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nearby Hospital's Name"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_local_hospital"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/additional_note_donee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:hint="Additional note to potential donors"
+                android:textColorHint="@color/white"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorLink="@color/white"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have read and agreed to this information"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:buttonTint="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+            <Button
+                android:id="@+id/request_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="Request"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

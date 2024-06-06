@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "715531717400",
+    "project_id": "vein2vein-d3bda",
+    "storage_bucket": "vein2vein-d3bda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715531717400:android:0ab28a8ea8de9c9f5fac6d",
+        "android_client_info": {
+          "package_name": "com.example.vein2vein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715531717400-d6ql5o5idgumf1jhf2gj4qb4227cda93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQeBE3AOHyr2kTInpAV-NtSVjCi9oukr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715531717400-d6ql5o5idgumf1jhf2gj4qb4227cda93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

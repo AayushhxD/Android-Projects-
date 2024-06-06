@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.ui.gallery.GalleryFragment"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill in the following details correctly. This will help to protect you and the patient who receives your blood."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.100" />
+
+            <EditText
+                android:id="@+id/name_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="First Name"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/surname_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Last Name"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/dob_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Date of Birth"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/gender_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Gender"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/email_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Email ID"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_email"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/mobile_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Mobile No."
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_contact_phone_24"
+                android:drawablePadding="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/blood_group_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Blood Group"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/address_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Address"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/last_date_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Last Donate Date"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/tattoo_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Did you get tattoo/piercing in past 6 months?"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawablePadding="10dp"
+                android:textSize="19dp"/>
+
+            <RadioGroup
+                android:id="@+id/tattoo_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/tattoo_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:elevation="8dp"
+                    android:checked="false"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/white"
+                    android:text="Yes"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"/>
+
+                <RadioButton
+                    android:id="@+id/tattoo_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:elevation="8dp"
+                    android:checked="false"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/white"
+                    android:text="No"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/hiv_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Have you ever been tested positive for HIV?"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawablePadding="10dp"
+                android:textSize="19dp"/>
+
+            <RadioGroup
+                android:id="@+id/hiv_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/hiv_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:elevation="8dp"
+                    android:checked="false"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/white"
+                    android:text="Yes"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"/>
+
+                <RadioButton
+                    android:id="@+id/hiv_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:elevation="8dp"
+                    android:checked="false"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/white"
+                    android:text="No"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/donate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="Become a Donor"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
