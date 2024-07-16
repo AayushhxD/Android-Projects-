@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgresult"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="88dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="240dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="NBN Sinhgad School of Engineering, Ambegaon Dist.Pune"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/t0"
+                android:layout_width="95dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:background="@drawable/img" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="340dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Department Of Computer Engineering"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="130dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Roll Number"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/rollnot1"
+                android:layout_width="205dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="130dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Name"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/namet2"
+                android:layout_width="205dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/textViewsem"
+                android:layout_width="130dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Semester"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/semestert6"
+                android:layout_width="205dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="90dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="115dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="105dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Marks Obtained"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="105dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Maximum Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="135dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Insem Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/classtestt4"
+                android:layout_width="105dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:text="150" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="135dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Practical Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/sessionalt5"
+                android:layout_width="105dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:text="100" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="135dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Assignment Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/assignmentt7"
+                android:layout_width="105dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="105dp"
+                android:layout_height="52dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:text="100" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="135dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Total Marks"
+                android:background="@color/table"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Totalt8"
+                android:layout_width="105dp"
+                android:layout_marginRight="1dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/white"
+                android:text="350" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
